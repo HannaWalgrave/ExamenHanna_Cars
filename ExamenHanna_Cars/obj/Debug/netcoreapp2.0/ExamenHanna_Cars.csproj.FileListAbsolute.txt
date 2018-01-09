@@ -1,0 +1,11 @@
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.csprojResolveAssemblyReference.cache
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.AssemblyInfo.cs
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\bin\Debug\netcoreapp2.0\ExamenHanna_Cars.deps.json
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\bin\Debug\netcoreapp2.0\ExamenHanna_Cars.runtimeconfig.json
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\bin\Debug\netcoreapp2.0\ExamenHanna_Cars.runtimeconfig.dev.json
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\bin\Debug\netcoreapp2.0\ExamenHanna_Cars.dll
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\bin\Debug\netcoreapp2.0\ExamenHanna_Cars.pdb
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.dll
+C:\Users\Gebruiker\source\repos\ExamenHanna_Cars\ExamenHanna_Cars\obj\Debug\netcoreapp2.0\ExamenHanna_Cars.pdb
