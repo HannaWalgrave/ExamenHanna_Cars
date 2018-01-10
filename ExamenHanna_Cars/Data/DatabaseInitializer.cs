@@ -27,11 +27,12 @@ namespace ExamenHanna_Cars.Data
 
 
             var owners = new List<Owner>() {
-
+                
                 new Owner() { FirstName = "Han", LastName = "Solo"},
                 new Owner() { FirstName = "Bruce", LastName= "Wayne"},
                 new Owner() { FirstName = "Marty", LastName = "McFly"},
                 new Owner() { FirstName = "Peter", LastName = "Venkman"},
+                new Owner() { FirstName = "No", LastName = "Owner"},
             };
 
 
