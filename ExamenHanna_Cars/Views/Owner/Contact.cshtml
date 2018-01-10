@@ -1,0 +1,95 @@
+﻿@model CarListViewModel
+@{
+    ViewData["Title"] = "Owners";
+}
+<h2 style="margin-top: 30px;">All @ViewData["Title"]</h2>
+<h3 style="margin-top: 10px; font-size: 1em;"> - Owners and their cars</h3>
+<a asp-controller="Home" asp-action="New" class="btn btn-primary" style="margin-top:50px; width: 20%;background-color: #b71c1c; color: white; border-color:transparent; margin-left:80%;">Add a new car</a>
+<div style="margin-top: 50px;" class="row">
+    <div class="col-md-12">
+        <table class="table">
+
+            <h1 style=" background-color: #b71c1c; color: white; font-size: 1.2em; width:100%; padding: 10px 0px; text-align: center;">Han Solo</h1>
+            @foreach (var Car in Model.Cars)
+            {
+                if (@Car.Owner == "Han Solo")
+                {
+
+                    <div style="margin-top:20px; display:flex; flex-direction: row; justify-content: space-between;">
+                        <h5>@Car.Brand</h5>
+                        <p>@Car.Plate</p>
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: darkblue;">
+                            Edit info
+                        </a>
+                        <a asp-controller="Home" asp-action="Delete" asp-route-id="@Car.Id"
+                           onclick="$.post(this.href).success(window.location.href = '/');return false; " style="text-decoration: none; color: red;">
+                            Delete
+                        </a>
+                    </div>
+                }
+            }
+
+            <h1 style="background-color: #b71c1c; color: white; font-size: 1.2em; width:100%; padding: 10px 0px; text-align: center;">Peter Venkman</h1>
+            @foreach (var Car in Model.Cars)
+            {
+                if (@Car.Owner == "Peter Venkman")
+                {
+
+                    <div style="margin-top:20px; display:flex; flex-direction: row; justify-content: space-between;">
+                        <h5>@Car.Brand</h5>
+                        <p>@Car.Plate</p>
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: darkblue;">
+                            Edit info
+                        </a>
+                        <a asp-controller="Home" asp-action="Delete" asp-route-id="@Car.Id"
+                           onclick="$.post(this.href).success(window.location.href = '/');return false; " style="text-decoration: none; color: red;">
+                            Delete
+                        </a>
+                    </div>
+                }
+            }
+
+            <h1 style="background-color: #b71c1c; color: white; font-size: 1.2em; width:100%; padding: 10px 0px; text-align: center;">Marty McFly</h1>
+            @foreach (var Car in Model.Cars)
+            {
+                if (@Car.Owner == "Marty McFly")
+                {
+                    <div style="margin-top:20px; display:flex; flex-direction: row; justify-content: space-between;">
+                        <h5>@Car.Brand</h5>
+                        <p>@Car.Plate</p>
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: darkblue;">
+                            Edit info
+                        </a>
+                        <a asp-controller="Home" asp-action="Delete" asp-route-id="@Car.Id"
+                           onclick="$.post(this.href).success(window.location.href = '/');return false; " style="text-decoration: none; color: red;">
+                            Delete
+                        </a>
+                    </div>
+                }
+            }
+
+            <h1 style="background-color: #b71c1c; color: white; font-size: 1.2em; width:100%; padding: 10px 0px; text-align: center;">Bruce Wayne</h1>
+            @foreach (var Car in Model.Cars)
+            {
+                if (@Car.Owner == "Bruce Wayne")
+                {
+
+                    <div style="margin-top:20px; display:flex; flex-direction: row; justify-content: space-between;">
+                        <h5>@Car.Brand</h5>
+                        <p>@Car.Plate</p>
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: darkblue;">
+                            Edit info
+                        </a>
+                        <a asp-controller="Home" asp-action="Delete" asp-route-id="@Car.Id"
+                           onclick="$.post(this.href).success(window.location.href = '/');return false; " style="text-decoration: none; color: red;">
+                            Delete
+                        </a>
+                    </div>
+                }
+            }
+
+
+        </table>
+    </div>
+
+</div>

@@ -14,12 +14,6 @@ namespace ExamenHanna_Cars.Data
         public static void InitializeDatabase(EntityContext entityContext)
         {
 
-            entityContext.Database.EnsureCreated();
-
-            if (((entityContext.GetService<IDatabaseCreator>() as RelationalDatabaseCreator)?.Exists()).GetValueOrDefault(false))
-            {
-                return;
-            }
 
             var brands = new List<Brand>
             {
@@ -34,11 +28,10 @@ namespace ExamenHanna_Cars.Data
 
             var owners = new List<Owner>() {
 
-                new Owner() { FirstName = "No", LastName = "Owner"},
                 new Owner() { FirstName = "Han", LastName = "Solo"},
-                new Owner() { FirstName = "Peter", LastName = "Venkman"},
+                new Owner() { FirstName = "Bruce", LastName= "Wayne"},
                 new Owner() { FirstName = "Marty", LastName = "McFly"},
-                new Owner() { FirstName = "Bruce", LastName= "Wayne"}
+                new Owner() { FirstName = "Peter", LastName = "Venkman"},
             };
 
 
@@ -79,7 +72,7 @@ namespace ExamenHanna_Cars.Data
                 cars.Add(new Car
                 {
 
-                    Plate = $"1 - ABC - 85{i}",
+                    Plate = $"1 - NRD - 85{i}",
                     Owner = new List<CarOwner> { carOwner },
                     Brand = brand,
                     Color = color

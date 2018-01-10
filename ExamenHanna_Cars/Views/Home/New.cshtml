@@ -1,0 +1,38 @@
+﻿@model CarEditViewModel;
+
+@{
+    ViewData["Title"] = "Add a new car";
+}
+
+<h2 style="margin-top: 30px;">@ViewData["Title"]</h2>
+
+<div style="margin-top: 80px;" class="row">
+    <div class="col-md-12">
+        <form asp-controller="Home" asp-action="PersistNew" method="post">
+
+            <input type="hidden" />
+
+            <div class="form-group" style="display:flex; flex-direction: column; width: 50%">
+                <label asp-for="Plate" style="color: #b71c1c;">Plate: </label>
+                <input type="text" asp-for="Plate" placeholder="Plate" />
+                <span asp-validation-for="Plate" class="text-danger"></span>
+            </div>
+
+
+
+            <div class="form-group" style="display:flex; flex-direction: column; width: 50%; margin-top: 20px;">
+                <label asp-for="Color" style="color: #b71c1c;">Color: </label>
+                <input type="text" asp-for="Color" placeholder="Color" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+
+                <div class="form-group" style="display:flex; flex-direction: column; width: 50%; margin-top: 20px;">
+                    <label asp-for="Date" style="color: #b71c1c;">Date: </label>
+                    <input type="text" asp-for="Date" placeholder="Color" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+
+
+
+                    <input style="background-color: #b71c1c; color:white; border-color: transparent; width:50%; margin-top: 30px; padding: 10px 0px;" type="submit" />
+        </form>
+    </div>
+</div> 

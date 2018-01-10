@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
-
 using ExamenHanna_Cars.Data;
 using ExamenHanna_Cars.Models;
 using ExamenHanna_Cars.Entities;

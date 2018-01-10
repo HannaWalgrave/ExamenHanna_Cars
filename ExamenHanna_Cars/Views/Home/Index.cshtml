@@ -5,12 +5,12 @@
 
 <h2 style="margin-top: 30px;">@ViewData["Title"]</h2>
 <h3 style="margin-top: 10px; font-size: 1em;"> - A list of cars and their most important information</h3>
-<a asp-controller="Home" asp-action="New" class="btn btn-primary" style="margin-top:50px; width: 20%;background-color: pink; color: white; border-color:transparent; margin-left:80%;">Add a new car</a>
+<a asp-controller="Home" asp-action="New" class="btn btn-primary" style="margin-top:50px; width: 20%;background-color: #b71c1c; color: white; border-color:transparent; margin-left:80%;">Add a new car</a>
 <div style="margin-top: 20px;" class="row">
     <div class="col-md-12">
         <table class="table">
             <thead>
-                <tr style="background-color: lightblue;">
+                <tr style="background-color: #b71c1c;">
                     <td style="color:white;">Color</td>
                     <td style="color:white;">Plate</td>
                     <td style="color:white;">Owner</td>
@@ -30,7 +30,7 @@
                     <td>@Car.Brand</td>
                     <td>@Car.Date.ToLongDateString()</td>
                     <td>
-                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: lightgreen;">
+                        <a asp-controller="Home" asp-action="Detail" asp-route-id="@Car.Id" style="text-decoration: none; color: darkblue;">
                             Edit info
                         </a>
                     </td>
